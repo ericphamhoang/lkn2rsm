@@ -1,0 +1,14 @@
+{
+  "name": "lkn2rsm",
+  "homepage": "https://github.com/ericphamhoang/lkn2rsm",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
