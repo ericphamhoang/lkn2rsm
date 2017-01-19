@@ -1,0 +1,6 @@
+{
+  "name": "ericphamhoang/lkn2rsm",
+  "require": {
+    "grabzit/grabzit":"3.0.1.2"
+  }
+}
