@@ -1,5 +1,5 @@
 {
-  "name": "lkn2rsm",
+  "name": "assets",
   "homepage": "https://github.com/ericphamhoang/lkn2rsm",
   "description": "",
   "main": "",
@@ -10,5 +10,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "materialize": "^0.97.8"
+  }
 }

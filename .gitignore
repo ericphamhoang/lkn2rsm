@@ -6,3 +6,4 @@ output/*
 composer.json
 composer.lock
 output/
+**/bower_components
