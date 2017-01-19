@@ -12,10 +12,18 @@ require_once __DIR__ . '/../config.php';
 
 global $twig;
 
-$html = $twig->render('default.twig', array());
+$html = $twig->render('default.twig', array(
+    'style' => file_get_contents(__DIR__.'/../assets/css/app.css')
+));
 
-$fileName = __DIR__.'/../output/wow'.time();
+$fileName = __DIR__.'/../output/wow';
 
 file_put_contents($fileName.".html", $html);
 
-echo "wkhtmltopdf $fileName.html $fileName.pdf";
+$pdf = new \mikehaertl\wkhtmlto\Pdf($fileName.'.html');
+
+$pdf->binary = __DIR__.'/../wkhtmltopdf/bin/wkhtmltopdf.exe';
+
+if (!$pdf->saveAs($fileName.'.pdf')) {
+    echo $pdf->getError();
+}

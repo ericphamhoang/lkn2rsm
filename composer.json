@@ -1,6 +1,7 @@
 {
   "name": "ericphamhoang/lkn2rsm",
   "require": {
-    "twig/twig": "^2.1"
+    "twig/twig": "^2.1",
+    "mikehaertl/phpwkhtmltopdf": "^2.2"
   }
 }
