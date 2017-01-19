@@ -4,72 +4,129 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "494b53e35c6839f6932a6d3ea9a93921",
-    "content-hash": "6a2026b298893d99424934d9d05855ea",
+    "hash": "0545fbfecd2fce80066c4446acfa35b5",
+    "content-hash": "92c0e1aec529ff6743012aa89ba9d697",
     "packages": [
         {
-            "name": "grabzit/grabzit",
-            "version": "3.0.1.2",
+            "name": "symfony/polyfill-mbstring",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/GrabzIt/grabzit-php.git",
-                "reference": "fff9da848cc94b9005370288954eca7318a8a804"
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "e79d363049d1c2128f133a2667e4f4190904f7f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrabzIt/grabzit-php/zipball/fff9da848cc94b9005370288954eca7318a8a804",
-                "reference": "fff9da848cc94b9005370288954eca7318a8a804",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/e79d363049d1c2128f133a2667e4f4190904f7f4",
+                "reference": "e79d363049d1c2128f133a2667e4f4190904f7f4",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.0.0"
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3-dev"
+                }
+            },
             "autoload": {
-                "classmap": [
-                    "lib/GrabzItAnimationOptions.class.php",
-                    "lib/GrabzItBaseOptions.class.php",
-                    "lib/GrabzItClient.class.php",
-                    "lib/GrabzItCookie.class.php",
-                    "lib/GrabzItException.class.php",
-                    "lib/GrabzItImageOptions.class.php",
-                    "lib/GrabzItPDFOptions.class.php",
-                    "lib/GrabzItRequest.class.php",
-                    "lib/GrabzItStatus.class.php",
-                    "lib/GrabzItTableOptions.class.php",
-                    "lib/GrabzItWaterMark.class.php"
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "description": "Use our API to allow your app to create images and PDF's from URL's or raw HTML. Additionally GrabzIt allows you to convert online videos into animated GIF's or HTML tables into CSV's.",
-            "homepage": "http://grabz.it/",
-            "keywords": [
-                "BMP",
-                "URL to Image",
-                "URL to PDF",
-                "animated gif",
-                "api",
-                "capture",
-                "csv",
-                "html",
-                "html to image",
-                "html to pdf",
-                "images",
-                "jpg",
-                "pdf",
-                "png",
-                "screenshots",
-                "table",
-                "tiff",
-                "video conversion",
-                "videos",
-                "web",
-                "xlsx"
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
             ],
-            "time": "2016-12-05 15:25:33"
+            "description": "Symfony polyfill for the Mbstring extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "mbstring",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2016-11-14 01:06:16"
+        },
+        {
+            "name": "twig/twig",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twigphp/Twig.git",
+                "reference": "9062992538bc5855a683c6737257bfa18d25a4b8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/9062992538bc5855a683c6737257bfa18d25a4b8",
+                "reference": "9062992538bc5855a683c6737257bfa18d25a4b8",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0",
+                "symfony/polyfill-mbstring": "~1.0"
+            },
+            "require-dev": {
+                "symfony/debug": "~2.7",
+                "symfony/phpunit-bridge": "~3.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Twig_": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
+                },
+                {
+                    "name": "Twig Team",
+                    "homepage": "http://twig.sensiolabs.org/contributors",
+                    "role": "Contributors"
+                }
+            ],
+            "description": "Twig, the flexible, fast, and secure template language for PHP",
+            "homepage": "http://twig.sensiolabs.org",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2017-01-11 19:39:01"
         }
     ],
     "packages-dev": [],

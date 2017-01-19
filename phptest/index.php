@@ -6,14 +6,16 @@
  * Time: 11:39 AM
  */
 
-require_once __DIR__.'/../vendor/autoload.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
-require_once __DIR__.'/../config.php';
+require_once __DIR__ . '/../config.php';
 
-// Create the GrabzItClient class
-// Replace "APPLICATION KEY", "APPLICATION SECRET" with the values from your account!
-$grabzIt = new GrabzItClient(API_KEY, API_VALUE);
+global $twig;
 
-$grabzIt->HTMLToPDF("WOW");
+$html = $twig->render('default.twig', array());
 
-$grabzIt->SaveTo(__DIR__.'/../output/wow.pdf');
+$fileName = __DIR__.'/../output/wow'.time();
+
+file_put_contents($fileName.".html", $html);
+
+echo "wkhtmltopdf $fileName.html $fileName.pdf";
