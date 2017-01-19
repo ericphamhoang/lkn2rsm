@@ -32,7 +32,10 @@ if (!$pdf->saveAs($fileName . '.pdf')) {
     <body>
     <link rel="stylesheet" href="../assets/css/app.css">
     <section>
-        <a class="waves-effect waves-light btn" href="../output/wow.pdf" download="wow.pdf">Download</a>
+        <div class="container center-align">
+            <iframe src="../output/wow.pdf" height="800px" width="100%"></iframe>
+            <a class="waves-effect waves-light btn" href="../output/wow.pdf" download="wow.pdf">Download</a>
+        </div>
     </section>
     </body>
 <?php
