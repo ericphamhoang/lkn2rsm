@@ -7,3 +7,5 @@ composer.json
 composer.lock
 output/
 **/bower_components
+data/*
+node_modules

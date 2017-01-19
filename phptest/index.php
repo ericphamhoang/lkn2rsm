@@ -12,8 +12,13 @@ require_once __DIR__ . '/../config.php';
 
 global $twig;
 
+$data = json_decode(file_get_contents(__DIR__ . '/../data/ericphamhoang.json'));
+
+var_dump($data);
+
 $html = $twig->render('default.twig', array(
-    'style' => file_get_contents(__DIR__ . '/../assets/css/app.css')
+    'style' => file_get_contents(__DIR__ . '/../assets/css/app.css'),
+    'data' => $data
 ));
 
 $fileName = __DIR__ . '/../output/wow';
